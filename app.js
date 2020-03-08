@@ -6,7 +6,7 @@ var http = require('http')
 var path = require("path");
 var mongoose = require("mongoose", { useUnifiedTopology: true });
 var server = http.createServer(app);
-var port = 3000;
+var port = process.env.PORT || 3000;
 // mongodb+srv://aman74871:<password>@cluster0-bgtkp.mongodb.net/test?retryWrites=true&w=majority
 var URL = "mongodb+srv://aman74871:quasar18212728@cluster0-bgtkp.mongodb.net/test?retryWrites=true&w=majority"
 var bodyparser = require("body-parser");
